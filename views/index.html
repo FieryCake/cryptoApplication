@@ -34,7 +34,7 @@
           <div class = "col-12 border border-light">
               <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="/images/logo.jpg" alt="Logo image" style="height:50px; width:100px;"> Coin crypto cap</a>
+          <a class="navbar-brand" href="#"><img src="/images/logo.jpg" alt="Logo image" style="height:50px; width:100px;"> <b>Coin crypto cap</b></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -61,7 +61,7 @@
       
        
     <!--Carousel-->
-        <div class="row g-0" style="padding-left:50px; padding-right:50px;">
+        <div class="row g-0 mt-3" style="padding-left:50px; padding-right:50px;">
           <div class="col-12">
 
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
@@ -120,7 +120,7 @@
      
      
         <div class="row g-0 mt-5 " style="padding-left:50px; padding-right:50px;">
-            <div class="col-12"><h4>How it works</h4></div>
+            <div class="col-12 mb-2"><h2 class="text-center">How it works</h2></div>
   
             <div class="col-sm-4 col-xs-6" ><div class="card h-100 mx-auto" style="width:92%">
               <img src="/images/track.png" class="card-img-top h-100" alt="...">
@@ -160,7 +160,7 @@
           
           </div>
 
-          <div class=" col-xs-12 col-md-4 bg-danger"></div>
+          <div class=" col-xs-12 col-md-4  text-center"><img  class="h-75 w-75"src='https://cryptologos.cc/logos/bitcoin-btc-logo.png'></div>
           
 
         </div>
@@ -170,7 +170,10 @@
     
 
     <script>
-        var test = "{{data}}"
+        var test = "{{datalel}}"
+        test = test.replace(/&quot;/g, '\"');
+        var data = JSON.parse(test)
+        console.log(data)
       
         // var output = document.getElementById('output')
         // output.innerText = test
