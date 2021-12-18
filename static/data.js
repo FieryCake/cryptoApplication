@@ -46,12 +46,15 @@ function getData() {
 async function main(){
 
     var lel = await getData()
-    console.log(JSON.stringify(lel))
-    exports.data = JSON.stringify(lel)
+    // lel = JSON.stringify(lel)
+    
+    // console.log(lel)
+    // lel = JSON.parse(lel)
+    // console.log(lel)
+    exports.data = lel
     
 }
 
 main();
-
 
 

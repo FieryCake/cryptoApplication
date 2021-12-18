@@ -39,7 +39,11 @@
           <div class = "col-10 border border-light">
               <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
+<<<<<<< Updated upstream
           <a class="navbar-brand" href="#"><img src="/images/logo.jpg" alt="Logo image" style="height:50px; width:100px;"></a>
+=======
+          <a class="navbar-brand" href="#"><img src="/images/logo.jpg" alt="Logo image" style="height:50px; width:100px;"> <b>Coin crypto cap</b></a>
+>>>>>>> Stashed changes
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -67,9 +71,14 @@
       
        
     <!--Carousel-->
+<<<<<<< Updated upstream
         <div class="row g-0">
           <div class="col-1"></div>
           <div class="col-10">
+=======
+        <div class="row g-0 mt-3" style="padding-left:50px; padding-right:50px;">
+          <div class="col-12">
+>>>>>>> Stashed changes
 
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-indicators">
@@ -121,22 +130,87 @@
             </form> -->
 
 
+<<<<<<< Updated upstream
         </div>
 
         <!--Below carousell-->
         <div class="row">
 
         </div>
+=======
+        </div> <!--End of carousel-->
+
+        <!--Below carousell (how it works)-->
+     
+     
+        <div class="row g-0 mt-5 " style="padding-left:50px; padding-right:50px;">
+            <div class="col-12 mb-3"><h3 style="text-align:center;">How it works</h3></div>
+  
+            <div class="col-sm-4 col-xs-6" ><div class="card h-100 mx-auto" style="width:92%">
+              <img src="/images/track.png" class="card-img-top h-100" alt="...">
+              <div class="card-body">
+                <p class="card-text">1. Track the prices of coins with our application</p>
+              </div>
+            </div></div>
+
+            <div class="col-sm-4 col-xs-6" ><div class="card h-100 mx-auto" style="width:92%">
+              <img src="/images/candle.jpg" class="card-img-top h-100" alt="...">
+              <div class="card-body">
+                <p class="card-text">2. Paper trade coins using the paper money</p>
+              </div>
+            </div></div>
+
+            <div class="col-sm-4 col-xs-6" ><div class="card h-100 mx-auto" style="width:92%">
+              <img src="/images/money.jpg" class="card-img-top h-100" alt="...">
+              <div class="card-body">
+                <p class="card-text">3. Analyse and see how you fair in the crypto world</p>
+              </div>
+            </div></div>
+        </div>
+<!--1. Track the prices of coins with our application 2. Paper trade coins using the paper money in your account 3. Analyse and see how you fair in the crypto world-->
+        <div class="row mt-5 g-0" style="padding-left:50px; padding-right:50px;">
+          <div class="col-12"><h4>Top performing coins</h4></div>
+          <div>LELELLELELLEELLLLELEL</div>
+
+        </div>
+
+        <!--Email section-->
+        <div class="row mt-5 bg-light pt-5" >
+          <div class=" col-xs-12 col-md-8 bg-light" style="padding-left:62px;"><h4 style="display:inline">Be the last to know about <h3 style="display:inline"><b>crypto news everyday</b></h3></h4>
+            <div></div><br>Get bad technical analysis, wrong news and updates right to your inbox! Sign up here so you don't miss our pro bono emailing service that does'nt always work
+
+            <div class='col-12' style="padding-right:62px;"><input type="email" class="form-control w-75 mt-4 d-inline" id="exampleFormControlInput1" placeholder="name@example.com">
+              <button type="button" class="btn btn-primary d-inline">Login</button></div>
+          </div>
+
+          <div class=" col-xs-12 col-md-4 " style="padding-right:62px; text-align: right;"><img class="h-75 w-75" style="background-color:transparent!important;" src="https://cryptologos.cc/logos/bitcoin-btc-logo.png"></div>
+        </div>
+
+        <div id="output">{{datalel}}</div>
+            
+>>>>>>> Stashed changes
 
     </div>
     
 
     <script>
         var test = "{{data}}"
+        var test2 = "{{datalel}}"
+        var text = test2.replace(/&quot;/g, '\"');
+        
+        const lol = JSON.parse(text)
+        console.log(lol)
       
-        // var output = document.getElementById('output')
-        // output.innerText = test
+        
+        
+        
     
+        function decodeHtml(html) {
+        let areaElement = document.createElement("textarea");
+        areaElement.innerHTML = html;
+
+        return areaElement.value;
+    }
     
     </script>
 
